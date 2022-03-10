@@ -1,0 +1,811 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+.new{ 
+   position: fixed;
+    justify-content: end;
+     align-items: center;
+     display: flex;
+     z-index: 20;
+     right: -500px;
+     transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-property: all;
+    top:500px
+ }
+.abrir{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-property: all;
+    right: 0px;
+}
+
+
+ .fondo{
+     opacity: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: #56565680;
+     transition-property: all;
+    z-index: -1;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    position: fixed;
+    top: 0PX;
+    left: 0px;
+    
+ }
+ .aparece{
+     z-index: 10;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    opacity: 1;
+    transition-property: all;
+}
+ .pide span{
+     font-family: Garamond;
+     font-size: 25px;
+     color: white;
+     writing-mode: vertical-rl;
+ }
+ .pide{
+     transform: rotateZ(180deg);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 45px;
+     height: 260px;
+     background-color: #90909b;
+ }
+ .rellena{
+     display:flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 500px;
+     height: 450px;
+     background-color: white;
+     border: 1px solid black;
+     align-items: center;
+ }
+ .rellena h1{ text-align: center;
+     color: #47475b;
+     font-size: 40px;
+     
+ } 
+ .rellena label{
+     color: #47475b;
+     font-size: 35px;
+     font-weight: 700;
+     font-family: Garamond;
+ }
+ .rellena input{
+     padding: 10px 30px;
+     border: 1px solid #90909b;
+ }
+ .rellena .formulario{
+     margin: 5px;
+     padding: 58px 73px;
+     border: 1px solid #90909b;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .rellena span{ text-align: center;
+     position: relative;
+     background-color: white;
+     color: #47475b;
+     ;
+     top: 12px;
+ }
+ .correo{
+     display: flex;
+ }
+ 
+.burguer{
+   
+   
+    position: relative;
+}
+
+.burguer img{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    position: absolute;
+    z-index: 2;
+    color: white;
+  font-family: garamond;
+  display: flex;flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+
+}
+.logo span{
+    margin-top: 30px;
+    font-size: 26px;
+}
+.logo img{
+ 
+   width: 245px;
+   height: 94px;
+}
+.logo h3{
+    font-size: 40px;
+    margin: 0px;
+    padding-top: 50px;
+    color: white;
+}
+.loguito{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loguito i{
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    font-size: 50px;
+}
+.loguito i:hover{
+    transform:scaleY(0.7)
+}
+.logo a{
+    margin-bottom: 90px;
+    text-decoration: none;
+    color: white;
+    font-family: garamond;
+    font-size: 26px;
+}
+.logo a:hover{
+    text-decoration: underline;
+}
+.menu{
+    margin-top: 50px;
+}
+.menu:hover a{
+    padding: 15px 60px;
+    text-decoration: none;
+    
+}
+
+.menu a{
+    
+    transition-property: all;
+   transition-timing-function: linear;
+    transition-duration: 0.5s;
+    border: 1px solid white;
+    padding: 15px 30px;
+}
+.logo hr{
+    
+    width: 10%;
+    color: white;
+    margin: 30px auto;
+    font-size: 1px;
+}
+hr{
+    width: 8%;
+    color: black;
+    margin: 30px auto;
+    font-size: 1px;
+}
+.texto{
+    padding: 20px 106px 40px 106px;
+    width: 60%;
+   margin: 0px auto;
+  
+}
+ h3{
+    font-size: 40px;
+    font-family: garamond;
+    text-align: center;
+    color: #47475b;
+}
+p{
+    font-size: 30px;
+    font-family: garamond;
+    text-align: center;
+    color: #90909b;;
+}
+.texto a{
+    text-decoration: none;
+}
+.texto a i{
+    display: flex ;
+    justify-content: center;
+    font-size: 60px;
+    color:#47475b ;
+    text-align: center;
+}
+a i:hover{
+    transform: translateY( 8px);
+    transition-property: all;
+   transition-timing-function: linear;
+    transition-duration: 0.3s;
+    
+}
+.columnas{
+    display: flex;
+    padding: 10% 15%;
+}
+.tostas{
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.tostas .tran{
+    position: relative;
+    overflow: hidden;
+}
+.tostas .tran:first-child{
+    margin-bottom: 10px;
+    
+}
+.carne{  
+    overflow: hidden;
+    width: 50%;
+}
+.carne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+}
+.carne .otro{
+    position: relative;
+    overflow: hidden;
+}
+.otro .flecha{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  z-index: 2;
+}
+.flecha i{
+    color: #90909b;
+    font-size: 100px;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    object-fit: cover;
+    opacity: 0;
+}
+.flecha:hover i{
+    opacity: 1;
+    
+
+}
+.tostas img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/3;  
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    object-fit: cover;
+}
+.tran .flecha{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+ .carne img:hover{
+    filter: brightness(60%);
+    transform: scale(1.1);
+    
+}
+
+.history{
+    display: flex;
+    padding: 0px 15%;
+    
+}
+.history .pasion{
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+.pasion p{
+    text-align: left;
+}
+.pasion h3{
+    text-align: left;
+}
+.pasion hr{
+    margin: 30px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+a i{
+    display: flex ;
+    justify-content: center;
+    font-size: 60px;
+    color:#47475b ;
+    text-align: center;
+}
+.comida{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 15%;
+    
+}
+.comida .dinero{
+    padding: 30px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: garamond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.comida .precio{
+    width: 50%;
+    
+    position: relative;
+    
+    overflow: hidden;
+    
+    
+}
+.precio img{
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+}
+.precio:hover img{
+    filter: brightness(60%);
+    transform: scale(1.1);
+    
+}
+
+.otro{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.precio span{
+    color: white;
+    font-size: 100px;
+}
+.precio h3{
+    color: white;
+    padding: 60px;
+    margin: 0%;
+}
+.precio p{
+color: white;
+margin: 0px;
+font-style: italic;
+}
+.lunch{
+    padding: 25px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.tipos{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 90px;
+    align-items: center;
+    font-size: 20px;
+    
+    color: #90909b;;
+}
+.color{
+    color: #47475b;
+}
+.todos{
+    opacity: 0;
+    position: absolute;
+}  
+
+
+
+.open{
+    position: relative;
+    transition: all;
+    opacity: 1;
+    transition-duration: 0.8s;
+    transform-origin: center;
+
+}
+
+.ingredientes h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    font-size: 20px;
+    padding: 20px;
+
+} 
+.ingredientes{
+    width: 50%;
+     margin: 0%;
+  
+   
+}
+.ingredientes p{
+    text-align: left;
+    margin: 0%; 
+    font-size: 20px; padding: 10px;
+    font-style: italic;
+}
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dos{
+    margin-right: 10px;
+    position: relative;
+}
+.carne:hover img{
+    filter: brightness(60%);
+    transform: scale(1.1);
+}
+.tostas:hover img{
+    filter: brightness(60%);
+    transform: scale(1.1);
+}
+.dos .dinero{
+    padding: 30px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: garamond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.dos span{
+    color: white;
+    font-size: 100px;
+    padding-top: 20px;
+}
+.dos h3{
+    color: white;
+    padding: 60px;
+    margin: 0%;
+}
+.dos p{
+color: white;
+margin: 0px;
+}
+.cafe{
+    width: 100%;
+    position: relative;
+    height: 100%;
+
+}
+.cafe:first-child{
+    margin-bottom: 10px;
+}
+.cafe .dinero{
+    width: 100%;
+}
+.dos .cafe span{
+    color: white;
+    font-size: 80px;
+    padding: 50px 0px;
+}
+.dos h3{
+    color: white;
+    padding:0px 70px 30px 70px;
+    margin: 0%;
+}
+.datos {
+    padding: 30px 15%;
+   
+}
+.datos{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+.personal input{
+    width: 100%;
+    padding: 15px 010px;
+    color: #90909b;
+    margin-bottom: 20px;
+    font-family: garamont;
+    
+
+}
+.personal{
+    padding: 0px 24.3%;
+    display: flex;
+    flex-direction: column;
+}
+.fecha{
+    padding:10px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.fecha input{
+    width: 17.3%;
+    padding: 22px 10px;
+    font-family: garamont;
+}
+.reserve{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.reserve:hover a{
+    padding: 15px 60px;
+    text-decoration: none;
+}
+
+.reserve a{
+    transition-property: all;
+   transition-timing-function: linear;
+    transition-duration: 0.5s;
+    border: 1px solid #90909b;
+    padding: 15px 30px;
+    color: #90909b;
+}
+iframe{
+    width: 100%;
+    padding: 30px 15%;
+}
+h4{
+    font-size: 25px;
+    font-family: garamond;
+    text-align: center;
+    color: #47475b;
+    font-style: italic;
+}
+.fin a{
+    text-decoration: none;
+    color: #47475b;
+    font-family: garamond;
+    font-size: 26px;
+}
+.fin a:hover{
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.icons a i{ padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #90909b;
+}
+.icons:hover a{
+    text-decoration: none;
+}
+.fin p{
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 768px){
+.comida{
+    flex-direction: column;
+}
+
+
+.precio img{
+    width: 100%;
+}
+.burguer{
+    height: 1000px;
+    padding: 5px;
+    
+}
+.burguer>img{object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.logo span{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}
+.texto{
+    margin: 0%;
+    width: 100%;
+    padding: 5px 15px;
+}
+.columnas{
+    flex-direction: column;
+    padding: 5px;
+}
+.tostas{
+    width: 100%;
+}
+.carne{
+    width: 100%;
+}
+.history{
+    flex-direction: column;
+    padding: 5PX;
+    justify-content: center;
+    align-items: center;
+}
+.history .pasion{
+    width: 100%;
+}
+.comida{
+    width: 100%;
+    padding: 5PX;
+}
+.comida .precio{
+    width: 100%;
+}
+.precio span{
+    font-size: 35px;
+}
+.precio h3{
+    font-size: 30px;
+}
+ .precio p{
+    font-size: 20px;
+}
+.tipos{
+    flex-direction: column;
+   
+    padding: 10px;
+
+}
+.lunch{
+    padding: 5px;
+}
+.tipos span{
+    width: 80%;
+text-align: center;
+    border: 1px solid #47475b;
+    padding: 10px 30px;
+}
+.lunch .tipos hr{
+    display: none;
+}
+.todos{
+    flex-direction: column;
+    
+}
+.dos span{
+    font-size: 35px;
+}
+.dos h3{
+    font-size: 30px;
+}
+ .dos p{
+    font-size: 20px;
+}
+.dos .cafe span{
+    font-size: 35px;
+}
+.dos .cafe h3{
+    font-size: 30px;
+}
+ .dos .cafe p{
+    font-size: 20px;
+}
+.ingredientes{
+    width: 100%;
+}
+.dinero{
+    padding: 5px;
+    font-size: 20Px;
+}
+.datos{
+    padding: 5px;
+}
+.datos .personal{
+    padding: 0px;
+}
+.fecha{
+    width: 100%;
+    flex-direction: column;
+    padding: 0%;
+}
+.fecha input{
+    
+    width: 100%;
+    padding: 15px 10px;
+    color: #90909b;
+    margin-bottom: 20px;
+    font-family: garamont;
+}
+    
+
+}
+@media (min-width: 769px) and (max-width:1024px){
+    .burguer{
+        height: 1000px;
+        padding: 15px;
+        
+    }
+    .burguer>img{object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .texto{
+        margin: 0%;
+    width: 100%;
+    padding: 30px 15px;
+    }
+    .texto p{
+        padding: 0px 50px;
+    }
+    .history{
+        padding: 30px;
+    }
+    .comida{
+        padding:30px ;
+    }
+    .lunch{
+        padding: 30px;
+    }
+    .columnas{
+        padding: 30px;
+    }
+    .datos{
+        padding: 30px;
+    }
+}
+
+
